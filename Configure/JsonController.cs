@@ -60,7 +60,7 @@ namespace Configurator
 
                 DataModel data = JsonSerializer.Deserialize<DataModel>(jsonData);
 
-                MessageBox.Show("Данные успешно загружены!", "Загрузка", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                // MessageBox.Show("Данные успешно загружены!", "Загрузка", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 return data;
             }
