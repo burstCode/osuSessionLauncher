@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace osuSessionLauncherConfigurator
+namespace Configurator
 {
     public class JsonController
     {

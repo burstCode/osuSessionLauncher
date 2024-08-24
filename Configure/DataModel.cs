@@ -1,4 +1,4 @@
-﻿namespace osuSessionLauncherConfigurator
+﻿namespace Configurator
 {
     public class DataModel
     {

@@ -1,4 +1,4 @@
-﻿namespace osuSessionLauncherConfigurator
+﻿namespace Configurator
 {
     partial class ConfigureForm
     {
