@@ -34,7 +34,7 @@
             PathToOBS = new TextBox();
             lblPathToSC = new Label();
             PathToSC = new TextBox();
-            btnOK = new Button();
+            btnApply = new Button();
             btnCancel = new Button();
             lblTitle = new Label();
             btnPathToOsu = new Button();
@@ -93,15 +93,16 @@
             PathToSC.Size = new Size(321, 27);
             PathToSC.TabIndex = 4;
             // 
-            // btnOK
+            // btnApply
             // 
-            btnOK.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            btnOK.Location = new Point(201, 317);
-            btnOK.Name = "btnOK";
-            btnOK.Size = new Size(160, 40);
-            btnOK.TabIndex = 6;
-            btnOK.Text = "Применить";
-            btnOK.UseVisualStyleBackColor = true;
+            btnApply.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            btnApply.Location = new Point(201, 317);
+            btnApply.Name = "btnApply";
+            btnApply.Size = new Size(160, 40);
+            btnApply.TabIndex = 6;
+            btnApply.Text = "Применить";
+            btnApply.UseVisualStyleBackColor = true;
+            btnApply.Click += btnApply_Click;
             // 
             // btnCancel
             // 
@@ -112,7 +113,7 @@
             btnCancel.TabIndex = 7;
             btnCancel.Text = "Отмена";
             btnCancel.UseVisualStyleBackColor = true;
-            btnCancel.Click += this.btnCancel_Click;
+            btnCancel.Click += btnCancel_Click;
             // 
             // lblTitle
             // 
@@ -164,7 +165,7 @@
             Controls.Add(btnPathToOsu);
             Controls.Add(lblTitle);
             Controls.Add(btnCancel);
-            Controls.Add(btnOK);
+            Controls.Add(btnApply);
             Controls.Add(lblPathToSC);
             Controls.Add(PathToSC);
             Controls.Add(lblPathToOBS);
@@ -194,7 +195,7 @@
         private TextBox PathToSC; 
         private Button btnPathToSC;
 
-        private Button btnOK;
+        private Button btnApply;
         private Button btnCancel;
     }
 }
