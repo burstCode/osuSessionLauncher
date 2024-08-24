@@ -7,8 +7,7 @@ namespace Launcher
 
     static class Program
     {
-        // const string CONFIG_FILE_PATH = "data/config.json";
-        const string CONFIG_FILE_PATH = @"C:\Users\mikex\source\repos\osuSessionLauncher\Configure\bin\Debug\net8.0-windows\data\config.json";
+        const string CONFIG_FILE_PATH = "data/config.json";
 
         static void Main(string[] args)
         {

@@ -16,16 +16,13 @@ namespace Configurator
         {
             try
             {
-                // Опции для форматирования JSON
                 var options = new JsonSerializerOptions
                 {
-                    WriteIndented = true // Для красивого форматирования JSON
+                    WriteIndented = true
                 };
 
-                // Сериализация объекта в строку JSON
                 string jsonData = JsonSerializer.Serialize(data, options);
 
-                // Создаем папку для конфига, если ее нет
                 string folderPath = Path.GetDirectoryName(_filePath);
                 if (!Directory.Exists(folderPath))
                 {
