@@ -8,7 +8,7 @@ namespace Configurator
 
             PathToOsu.Text = @"C:\Users\" + Environment.UserName + @"\AppData\Local\osu!";
             PathToOBS.Text = @"C:\Program Files\obs-studio\bin\64bit";
-            // PathToSC.Text = @"";
+            PathToSC.Text = @"C:\Program Files (x86)\StreamCompanion";
         }
 
         private void btnPathToOsu_Click(object sender, EventArgs e)
@@ -58,7 +58,7 @@ namespace Configurator
             // Пути к файлам
             string osuPath = Path.Combine(PathToOsu.Text, "osu!.exe");
             string obsPath = Path.Combine(PathToOBS.Text, "obs64.exe");
-            string scPath = Path.Combine(PathToSC.Text, "StreamCompanion.exe");
+            string scPath = Path.Combine(PathToSC.Text, "osu!StreamCompanion.exe");
 
             // Список путей, где не найдены файлы
             List<string> missingFiles = new List<string>();
